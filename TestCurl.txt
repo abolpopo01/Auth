@@ -1,0 +1,18 @@
+register:
+curl -X POST http://127.0.0.1:8000/api/register \
+     -H "Content-Type: application/json" \
+     -d '{"name":"asdasd", "email":"zxczxczxc@gmail.com", "password":"12345678", "password_confirmation":"12345678"}'
+
+login:
+curl -X POST "http://localhost:8000/api/login" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{
+    "email": "zxczxczxc@gmail.com",
+    "password": "12345678"
+  }'
+
+logout:
+curl -X POST "http://localhost:8000/api/logout" \
+    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzU2NTExNzQyLCJleHAiOjE3NTY1MTUzNDIsIm5iZiI6MTc1NjUxMTc0MiwianRpIjoiQXBpT0s3WEd4MXNEdFJTUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IvSPXMcENESQcxL3zxKUQEiVN3jCRGRhp9ZdIkj9QxA" \
+    -H "Accept: application/json" \
