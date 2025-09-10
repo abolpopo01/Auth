@@ -1,7 +1,7 @@
 register:
 curl -X POST http://127.0.0.1:8000/api/register \
      -H "Content-Type: application/json" \
-     -d '{"name":"asdasd", "email":"zxczxczxc@gmail.com", "password":"12345678", "password_confirmation":"12345678"}'
+     -d '{"name":"ababab", "email":"aasss@gmail.com", "password":"12345678", "password_confirmation":"12345678"}'
 
 login:
 curl -X POST "http://localhost:8000/api/login" \
